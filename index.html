@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./Clock.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="far fa-clock"></i> Digital Clock</h1>
+            <p class="subtitle">Real-time clock using JavaScript Date() object</p>
+        </header>
+        
+        <main>
+            <div class="clock-container">
+                <div class="clock-display">
+                    <div class="time-section">
+                        <div class="time-value" id="hours">00</div>
+                        <div class="time-label">Hours</div>
+                    </div>
+                    
+                    <div class="separator">:</div>
+                    
+                    <div class="time-section">
+                        <div class="time-value" id="minutes">00</div>
+                        <div class="time-label">Minutes</div>
+                    </div>
+                    
+                    <div class="separator">:</div>
+                    
+                    <div class="time-section">
+                        <div class="time-value" id="seconds">00</div>
+                        <div class="time-label">Seconds</div>
+                    </div>
+                    
+                    <div class="time-section">
+                        <div class="time-value" id="ampm">AM</div>
+                        <div class="time-label">Period</div>
+                    </div>
+                </div>
+                
+                <div class="date-display" id="date">Monday, January 1, 2023</div>
+            </div>
+            
+            <div class="controls">
+                <button class="control-btn format-toggle" id="toggleFormat">
+                    <i class="fas fa-exchange-alt"></i> Switch to 24-hour format
+                </button>
+                <button class="control-btn" id="pauseResume">
+                    <i class="fas fa-pause"></i> Pause Clock
+                </button>
+                <button class="control-btn" id="refresh">
+                    <i class="fas fa-sync-alt"></i> Refresh
+                </button>
+            </div>
+            
+            <div class="info-panel">
+                <h3><i class="fas fa-info-circle"></i> How This Clock Works</h3>
+                <p>This digital clock uses JavaScript's <code>Date()</code> object to get the current time from your system. The time updates every second using <code>setInterval()</code> function.</p>
+                <p>The clock format can be toggled between 12-hour (AM/PM) and 24-hour formats. You can also pause the clock to examine a specific moment in time.</p>
+                <p>The date is displayed in a readable format using JavaScript's date methods like <code>toLocaleDateString()</code> with formatting options.</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Digital Clock created with HTML, CSS, and JavaScript | Updates in real-time</p>
+        </footer>
+    </div>
+    <script src="./Clock.js"></script>
+</body>
+</html>
