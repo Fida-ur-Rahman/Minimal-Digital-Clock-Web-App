@@ -46,7 +46,7 @@ A function runs every second using `setInterval()` to update the hours, minutes,
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/digital-clock.git
+   git clone https://fida-ur-rahman.github.io/Minimal-Digital-Clock-Web-App/
    ```
 
 2. **Open the project folder**
